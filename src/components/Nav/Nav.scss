@@ -1,0 +1,22 @@
+#navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+#logo {
+  margin-right: auto;
+}
+
+a {
+  margin: 4% 5%;
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
