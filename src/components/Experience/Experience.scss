@@ -1,0 +1,18 @@
+@import '../Variables.scss';
+
+li {
+  list-style: none;
+  margin: 6vw 20vw;
+}
+
+h3 {
+  color: $color-secondary;
+}
+
+ul{
+  padding-inline-start: 0;
+}
+
+@media screen and (max-width:$mq-phone){
+  li{margin: 1vw 10vw;}
+}

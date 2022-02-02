@@ -1,6 +1,10 @@
+@import '../Variables.scss';
+
 #navigation {
   display: flex;
   justify-content: space-between;
+
+  
 }
 
 #logo {
@@ -14,9 +18,15 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
+  color: $color-secondary;
 }
 
 a:active {
   text-decoration: underline;
+}
+
+@media screen and (max-width: $mq-phone) {
+  #navigation{font-size: 0.8rem;}
+  a{margin: 2% 3%}
+
 }

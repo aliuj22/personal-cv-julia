@@ -10,10 +10,10 @@ const Nav = () => {
         href="https://www.linkedin.com/in/julia-wos99/"
         id="logo"
       >
-        JULIA WOS
+        JULIA WOŚ
       </a>
       <a href="#about">ABOUT ME</a>
-      <a href="#">PORTFOLIO</a>
+      <a href="#experience">PORTFOLIO</a>
     </nav>
   );
 };

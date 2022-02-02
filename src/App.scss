@@ -1,7 +1,14 @@
+@import "src/components/Variables.scss";
+
 .App {
   text-align: center;
 }
 
 body {
   padding: 2%;
+  scroll-behavior: smooth;
+   
+  @media screen and (max-width: $mq-phone) {
+    font-size: 1rem;
+  }
 }

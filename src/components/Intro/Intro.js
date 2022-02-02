@@ -17,6 +17,13 @@ const Intro = () => {
       >
         <i className="fab fa-linkedin"></i>
       </a>
+      <a
+        target="_blank"
+        rel="noreferrer noopener"
+        href="https://github.com/aliuj22"
+      >
+        <i class="fab fa-github-square"></i>
+      </a>
     </div>
   );
 };
