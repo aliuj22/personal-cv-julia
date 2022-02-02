@@ -9,10 +9,12 @@ h3 {
   color: $color-secondary;
 }
 
-ul{
+ul {
   padding-inline-start: 0;
 }
 
-@media screen and (max-width:$mq-phone){
-  li{margin: 1vw 10vw;}
+@media screen and (max-width: $mq-phone) {
+  li {
+    margin: 1vw 10vw;
+  }
 }

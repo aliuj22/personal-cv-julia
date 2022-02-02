@@ -1,5 +1,4 @@
-@import "../Variables.scss";
-
+@import '../Variables.scss';
 
 #image-julia {
   width: 25vw;
@@ -8,15 +7,15 @@
 
 .top-container {
   text-align: center;
-  margin: 5% 0;
+  margin: 4% 0;
   height: 100%;
 }
 
 #introduction {
   font-size: 1.5rem;
 
-  @media screen and (max-width:$mq-phone){
-    font-size: 1rem
+  @media screen and (max-width: $mq-phone) {
+    font-size: 1rem;
   }
 }
 
@@ -24,7 +23,6 @@
   font-size: 2.5rem;
 }
 
-.fab:hover{
+.fab:hover {
   color: $color-secondary;
-
 }
