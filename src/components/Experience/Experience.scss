@@ -3,6 +3,14 @@
 li {
   list-style: none;
   margin: 6vw 20vw;
+
+  p {
+    padding: 0 10%;
+  }
+}
+
+li:first-child {
+  margin-top: 3vw;
 }
 
 h3 {

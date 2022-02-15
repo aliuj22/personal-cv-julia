@@ -4,6 +4,13 @@ import './Experience.scss';
 const Experience = (props) => {
   return (
     <div id="experience">
+      <h2>PROJECTS</h2>
+      <label htmlFor="project-type">Choose from:</label>
+      <select name="project-type" id="project-type">
+        <option value="deployed">Deployed Projects</option>
+        <option value="small/not-deployed">Small/Not Deployed Projects</option>
+      </select>
+
       <ul>
         {props.projects.map((item, index) => (
           <li key={index}>
