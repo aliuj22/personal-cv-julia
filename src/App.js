@@ -5,7 +5,7 @@ import Intro from './components/Intro/Intro';
 import Nav from './components/Nav/Nav';
 
 function App() {
-  const projects = [
+  const deployedProjects = [
     {
       name: 'Klaudias Portfolio',
       description:
@@ -25,12 +25,30 @@ function App() {
     },
   ];
 
+  const notDeployedProjects = [
+    {
+      name: 'Hungry Monster',
+      description:
+        'Second project in Hyper Island and the first group one, a task was to create a website using date() constructor and localstorage() property, the rest was up to our creativity. We created a small game, where ',
+      link: 'https://github.com/aliuj22/dream-team-halloween-quiz',
+    },
+    {
+      name: 'Halloween Quiz',
+      description:
+        'Third project created in HI, as well a group one. We were tasked to create a website with a quiz, the only requirement was to use Google Firebase. We decided to make a Halloween movie quiz, where user answers a group of questions and based on the answers they get a proposition of a movie they should watch. ',
+      link: 'https://github.com/aliuj22/dream-team-halloween-quiz',
+    },
+  ];
+
   return (
     <div className="App">
       <Nav />
       <Intro />
       <AboutMe />
-      <Experience projects={projects} />
+      <Experience
+        deployedProjects={deployedProjects}
+        notDeployedProjects={notDeployedProjects}
+      />
     </div>
   );
 }
