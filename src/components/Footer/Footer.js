@@ -20,7 +20,7 @@ const Footer = () => {
       </a>
       <a href="mailto:julia.wos@hyperisland.se">
         {' '}
-        <i class="fas fa-solid fa-envelope"></i>
+        <i className="fas fa-solid fa-envelope"></i>
       </a>
     </footer>
   );
