@@ -5,6 +5,7 @@ import Footer from './components/Footer/Footer';
 import Intro from './components/Intro/Intro';
 import Nav from './components/Nav/Nav';
 import hallGif from './GIF-final-halloween.gif';
+import dinoGif from './GIF-dino.gif';
 
 function App() {
   const deployedProjects = [
@@ -41,7 +42,7 @@ function App() {
         >
           {' '}
           <img
-            src={hallGif}
+            src={dinoGif}
             alt="gif of the hungry monster website"
             className="gif"
           />
