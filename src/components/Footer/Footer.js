@@ -1,15 +1,9 @@
 import React from 'react';
-import julia from './julia.jpeg';
-import './Intro.scss';
+import './Footer.scss';
 
-const Intro = () => {
+const Footer = () => {
   return (
-    <div className="top-container">
-      <img id="image-julia" src={julia} alt="Julia" />
-      <h1 id="introduction">
-        HI! <br /> I'M JULIA WOŚ, <br /> A FRONTEND DEVELOPER IN TRAINING <br />{' '}
-        @ HYPER ISLAND
-      </h1>
+    <footer>
       <a
         target="_blank"
         rel="noreferrer noopener"
@@ -24,7 +18,12 @@ const Intro = () => {
       >
         <i className="fab fa-github-square"></i>
       </a>
-    </div>
+      <a href="mailto:julia.wos@hyperisland.se">
+        {' '}
+        <i class="fas fa-solid fa-envelope"></i>
+      </a>
+    </footer>
   );
 };
-export default Intro;
+
+export default Footer;

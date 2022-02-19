@@ -1,0 +1,18 @@
+@import 'src/components/Variables.scss';
+button {
+  padding: 1%;
+  font-size: 1rem;
+  margin: 2%;
+  border-radius: 18%;
+  border: 1px solid black;
+  box-shadow: 2px 3px #999;
+}
+
+button:hover {
+  border-color: $color-secondary;
+  color: $color-secondary;
+}
+
+button:active {
+  transform: translateY(4px);
+}

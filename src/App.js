@@ -1,6 +1,7 @@
 import './App.scss';
 import AboutMe from './components/AboutMe/AboutMe';
 import Experience from './components/Experience/Experience';
+import Footer from './components/Footer/Footer';
 import Intro from './components/Intro/Intro';
 import Nav from './components/Nav/Nav';
 
@@ -28,14 +29,12 @@ function App() {
   const notDeployedProjects = [
     {
       name: 'Hungry Monster',
-      description:
-        'Second project in Hyper Island and the first group one, a task was to create a website using date() constructor and localstorage() property, the rest was up to our creativity. We created a small game, where ',
+      description: `Second project in Hyper Island and the first group one, a task was to create a website using date() constructor and localstorage() property, the rest was up to our creativity. We created a small game, where you have to feed a pink dino so it doesn't starve, when you do a randomised message pops up and dinos facial expression changes. In local storage the information of the time game was started or how much food the dino needs was stored. We wanted to mostly focus on learnings, thus the simplicity of it. Since it was our first group project, I've learned a great deal about collaboration,git and github as well as pair coding.`,
       link: 'https://github.com/aliuj22/dream-team-halloween-quiz',
     },
     {
       name: 'Halloween Quiz',
-      description:
-        'Third project created in HI, as well a group one. We were tasked to create a website with a quiz, the only requirement was to use Google Firebase. We decided to make a Halloween movie quiz, where user answers a group of questions and based on the answers they get a proposition of a movie they should watch. ',
+      description: `Third project created in HI, as well a group one. We were tasked to create a website with a quiz, the only requirement was to use Google Firebase. We decided to make a Halloween movie quiz, where user answers a group of questions and based on the answers they get a proposition of a movie they should watch. We stored the users name in the firebase. During this project I've learned how to use Liveshare and how to paircode as well as agile methods working(kanban).`,
       link: 'https://github.com/aliuj22/dream-team-halloween-quiz',
     },
   ];
@@ -46,9 +45,10 @@ function App() {
       <Intro />
       <AboutMe />
       <Experience
-        deployedProjects={deployedProjects}
         notDeployedProjects={notDeployedProjects}
+        deployedProjects={deployedProjects}
       />
+      <Footer />
     </div>
   );
 }
