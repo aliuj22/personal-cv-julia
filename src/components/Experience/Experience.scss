@@ -23,13 +23,21 @@ ul {
 
 @media screen and (max-width: $mq-phone) {
   li {
-    margin: 1vw 10vw;
+    margin: 10%;
+  }
+
+  li p {
+    padding: 0;
   }
 }
 
 .gif {
   width: 20vw;
   margin: 5%;
+
+  @media screen and (max-width: $mq-phone) {
+    width: 60vw;
+  }
 }
 .gif-container {
   display: flex;
