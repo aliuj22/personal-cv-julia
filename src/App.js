@@ -1,11 +1,8 @@
 import './App.scss';
-import AboutMe from './components/AboutMe/AboutMe';
-import Experience from './components/Experience/Experience';
-import Footer from './components/Footer/Footer';
-import Intro from './components/Intro/Intro';
-import Nav from './components/Nav/Nav';
+
 import hallGif from './GIF-final-halloween.gif';
 import dinoGif from './GIF-dino.gif';
+import { AboutMe, Experience, Footer, Intro, Nav } from './components';
 
 function App() {
   const deployedProjects = [
