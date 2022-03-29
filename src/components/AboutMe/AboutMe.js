@@ -17,8 +17,8 @@ const AboutMe = () => {
         skills in problem solving, organising and logistics. I speak fluent
         Polish and English, as well as Swedish on a basic, everyday level.
         During my time in Hyper Island I've been learning and gaining experience
-        in html, css, javascript, ux and ui design, react, figma, GitHub and
-        agile methods of working.
+        in html, css, javascript, ux and ui design, react, figma, basics of MERN stack, GitHub and
+        agile methods of working in teams.
       </p>
     </div>
   );
