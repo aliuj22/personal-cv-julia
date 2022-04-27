@@ -15,7 +15,7 @@ function App() {
     {
       name: 'Nerd Invaders',
       description:
-        'A group project created in Hyper Island, my team and I have been given a task to create a simple game using Phaser. We were inspired by classical space invaders game.',
+        'A group project created in Hyper Island, my team and I have been given a task to create a simple game using Phaser. We were inspired by classical space invaders game. [Desktop only]',
       link: 'https://nerd-invaders.netlify.app',
     },
     {
