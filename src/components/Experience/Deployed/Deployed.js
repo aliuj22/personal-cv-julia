@@ -9,7 +9,7 @@ const Deployed = (props) => {
         {props.description.map((item, index) => (
           <li key={index}>
             <hr />
-            <h3>{item.name}</h3> <p>{item.description} </p>{' '}
+            <h3>{item.name}</h3> <p>{item.description} </p> <p>{item.tech}</p>
             {item.gif && item.gif}
             <a target="_blank" href={item.link} rel="noreferrer">
               {item.gif ? (
