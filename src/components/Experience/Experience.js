@@ -10,7 +10,6 @@ const Experience = (props) => {
   const [description, setDescription] = useState([]);
 
   const showProjects = (e) => {
-    console.log(e);
     setDescription(e);
   };
 
