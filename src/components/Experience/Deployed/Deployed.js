@@ -1,8 +1,6 @@
 import React from 'react';
 
 const Deployed = (props) => {
-  console.log(props.description, 'from deployed');
-
   return (
     <div>
       <ul id="projects-container">
@@ -10,6 +8,7 @@ const Deployed = (props) => {
           <li key={index}>
             <hr />
             <h3>{item.name}</h3> <p>{item.description} </p> <p>{item.tech}</p>
+            {item.link2 && item.link2}
             {item.gif && item.gif}
             <a target="_blank" href={item.link} rel="noreferrer">
               <em>Check it out here!</em>
