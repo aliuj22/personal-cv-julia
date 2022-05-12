@@ -46,4 +46,19 @@ ul {
 
 .card {
   display: grid;
+  grid-template-columns: auto 75% auto;
+}
+
+// .gridRight {
+//   grid-column: 3;
+// }
+
+// .gridLeft {
+//
+// }
+
+.cardFlex {
+  display: flex;
+  grid-column: 2;
+  margin: 5% 0;
 }
