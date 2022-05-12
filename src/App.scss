@@ -10,4 +10,8 @@ body {
   @media screen and (max-width: $mq-phone) {
     font-size: 0.8rem;
   }
+
+  p {
+    line-height: 1.8;
+  }
 }

@@ -1,5 +1,4 @@
 import './App.scss';
-
 import hallGif from './img/GIF-final-halloween.gif';
 import dinoGif from './img/GIF-dino.gif';
 import uxGif from './img/GIF-ux.gif';
@@ -7,8 +6,10 @@ import klaudiaImg from './img/klaudia.png';
 import invadersImg from './img/invaders.png';
 import shufflerImg from './img/shuffler.png';
 import shopGif from './img/GIF-shop.gif';
+import { Routes, Route } from 'react-router-dom';
 
-import { AboutMe, Experience, Footer, Intro, Nav } from './components';
+import { Experience, Nav, Footer } from './components';
+import Home from './pages/home';
 
 function App() {
   console.log(
@@ -82,10 +83,6 @@ function App() {
         </a>
       ),
     },
-  ];
-
-  //gifs: use canva
-  const notDeployedProjects = [
     {
       name: 'Skateboards LOL',
       description: `Code and Collaborate module project. The task was to build a E-commerce platform while working in agile teams. My team and I had daily check-ins, code reviews, a scrum master and sprint reviews. We mostly worked with pair and mob programming and implemented some TDD and basic encryption for the login function. We decided to design it using mobile first strategy. My biggest learnings include working with MERN stack, NextJS, Mocha and Chai for backend testing, backend folder structure, mobile first design and working in sprints with a scrum master. `,
@@ -175,16 +172,21 @@ function App() {
     },
   ];
 
+  // //gifs: use canva
+  // const notDeployedProjects = [
+
+  // ];
+
   return (
     <div className="App">
       <Nav />
-      <Intro />
-      <AboutMe />
-      <Experience
-        notDeployedProjects={notDeployedProjects}
-        deployedProjects={deployedProjects}
-      />
-
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route
+          path="/experience"
+          element={<Experience deployedProjects={deployedProjects} />}
+        />
+      </Routes>
       <Footer />
     </div>
   );

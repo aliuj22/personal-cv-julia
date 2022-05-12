@@ -2,7 +2,7 @@ import React from 'react';
 
 const Deployed = (props) => {
   return (
-    <div>
+    <div className="card">
       <ul id="projects-container">
         {props.description.map((item, index) => (
           <li key={index}>
