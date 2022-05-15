@@ -6,8 +6,9 @@
 
 body {
   scroll-behavior: smooth;
+  line-height: 1.8;
 
   @media screen and (max-width: $mq-phone) {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 }

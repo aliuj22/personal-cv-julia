@@ -1,6 +1,6 @@
 import React from 'react';
 import './Nav.scss';
-
+import { Link } from 'react-router-dom';
 const Nav = () => {
   return (
     <nav id="navigation">
@@ -12,8 +12,8 @@ const Nav = () => {
       >
         JULIA WOŚ
       </a>
-      <a href="#about">ABOUT ME</a>
-      <a href="#experience">PORTFOLIO</a>
+      <Link to={'/'}>ABOUT ME</Link>
+      <Link to={'experience'}>PORTFOLIO</Link>
     </nav>
   );
 };

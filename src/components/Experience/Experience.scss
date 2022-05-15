@@ -1,45 +1,95 @@
 @import '../Variables.scss';
 
-li {
-  list-style: none;
-  margin: 6vw 20vw;
-
-  p {
-    padding: 0 10%;
-  }
-}
-
-li:first-child {
-  margin-top: 3vw;
-}
-
 h3 {
   color: $color-secondary;
-}
-
-ul {
-  padding-inline-start: 0;
 }
 
 @media screen and (max-width: $mq-phone) {
   li {
     margin: 10%;
   }
-
-  li p {
-    padding: 0;
-  }
 }
 
 .gif {
-  width: 20vw;
-  margin: 5%;
+  width: 30vw;
+  margin: 5% 5% 0 5%;
 
   @media screen and (max-width: $mq-phone) {
-    width: 60vw;
+    width: 50vw;
   }
 }
 .gif-container {
   display: flex;
   justify-content: center;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: auto 80% auto;
+
+  @media screen and (max-width: $mq-tablet) {
+    grid-template-columns: auto 90% auto;
+  }
+}
+
+.cardFlex {
+  display: flex;
+  align-items: center;
+  grid-column: 2;
+  margin: 5% 0;
+  background-color: white;
+  border-radius: 10px;
+  padding: 3%;
+  box-shadow: 10px 5px 15px $color-secondary;
+
+  @media screen and (max-width: $mq-tablet) {
+    flex-direction: column;
+  }
+}
+
+.gridLeft {
+  padding: 0 5%;
+  h3 {
+    margin-top: 0;
+  }
+
+  &__description {
+    text-align: left;
+  }
+}
+
+.gridRight {
+  padding: 0 5%;
+
+  &__link {
+    text-decoration: underline;
+    color: $color-secondary;
+    font-size: 1.3em;
+    border-radius: 6px;
+    box-shadow: inset 0 0 0 0 $color-secondary;
+    margin: 0 -0.25rem;
+    padding: 0.4rem;
+    transition: color 0.4s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  &__link:hover {
+    box-shadow: inset 300px 0 50px 50px $color-secondary;
+    color: white;
+    text-decoration: none;
+  }
+  @media screen and (max-width: $mq-phone) {
+    padding: 0;
+  }
+}
+
+#desktopOnly {
+  margin: 0;
+}
+
+.projectIcons {
+  font-size: 30px;
+  padding: 5px;
+}
+
+.projectImg {
+  margin: 20% 0 10% 0;
 }

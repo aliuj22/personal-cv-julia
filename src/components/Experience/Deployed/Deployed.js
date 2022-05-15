@@ -2,20 +2,55 @@ import React from 'react';
 
 const Deployed = (props) => {
   return (
-    <div>
-      <ul id="projects-container">
-        {props.description.map((item, index) => (
-          <li key={index}>
-            <hr />
-            <h3>{item.name}</h3> <p>{item.description} </p> <p>{item.tech}</p>
-            {item.link2 && item.link2}
+    <div id="projects-container" className="card">
+      {props.description.map((item, index) => (
+        <div className="cardFlex" key={index}>
+          <div className="gridLeft">
+            <h3>{item.name}</h3>{' '}
+            <p className="gridLeft__description">{item.description} </p>{' '}
+          </div>
+          <div className="gridRight">
             {item.gif && item.gif}
-            <a target="_blank" href={item.link} rel="noreferrer">
-              <em>Check it out here!</em>
-            </a>
-          </li>
-        ))}
-      </ul>
+
+            <p>{item.tech}</p>
+
+            {item.link2 ? (
+              <>
+                {' '}
+                <a
+                  target="_blank"
+                  href={item.link}
+                  rel="noreferrer"
+                  className="gridRight__link"
+                >
+                  {' '}
+                  <em>Frontend code</em>{' '}
+                </a>{' '}
+                <br />
+                <a
+                  target="_blank"
+                  href={item.link2}
+                  rel="noreferrer"
+                  className="gridRight__link"
+                >
+                  {' '}
+                  <em>Backend code</em>{' '}
+                </a>
+              </>
+            ) : (
+              <a
+                target="_blank"
+                href={item.link}
+                rel="noreferrer"
+                className="gridRight__link"
+              >
+                {' '}
+                <em>Check it out here!</em>{' '}
+              </a>
+            )}
+          </div>
+        </div>
+      ))}
     </div>
   );
 };
