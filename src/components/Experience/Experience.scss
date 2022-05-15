@@ -12,7 +12,7 @@ h3 {
 
 .gif {
   width: 30vw;
-  margin: 5%;
+  margin: 5% 5% 0 5%;
 
   @media screen and (max-width: $mq-phone) {
     width: 50vw;
@@ -27,7 +27,7 @@ h3 {
   display: grid;
   grid-template-columns: auto 80% auto;
 
-  @media screen and (max-width: $mq-phone) {
+  @media screen and (max-width: $mq-tablet) {
     grid-template-columns: auto 90% auto;
   }
 }
@@ -50,13 +50,16 @@ h3 {
   padding: 3%;
   box-shadow: 10px 5px 15px $color-secondary;
 
-  @media screen and (max-width: $mq-phone) {
+  @media screen and (max-width: $mq-tablet) {
     flex-direction: column;
   }
 }
 
 .gridLeft {
   padding: 0 5%;
+  h3 {
+    margin-top: 0;
+  }
 
   &__description {
     text-align: left;
@@ -72,6 +75,17 @@ h3 {
   &__link {
     text-decoration: underline;
     color: $color-secondary;
+    font-size: 1.3em;
+    border-radius: 6px;
+    box-shadow: inset 0 0 0 0 $color-secondary;
+    margin: 0 -0.25rem;
+    padding: 0.4rem;
+    transition: color 0.4s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  &__link:hover {
+    box-shadow: inset 300px 0 50px 50px $color-secondary;
+    color: white;
+    text-decoration: none;
   }
   @media screen and (max-width: $mq-phone) {
     padding: 0;
@@ -88,7 +102,7 @@ h3 {
 }
 
 .projectImg {
-  margin: 20% 0;
+  margin: 20% 0 10% 0;
 }
 //TODO:  fix positioning so pictures and gifs are evenly spaced together with the text
 //TODO: add some animations

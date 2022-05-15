@@ -14,11 +14,14 @@ const AboutMe = () => {
         in team leading, working in fast paced environment and under stressful
         conditions, due to having worked as an Assistant Manager in a popular
         restaurant. I enjoy working in teams as well as individually. I have
-        skills in problem solving, organising and logistics. I speak fluent
-        Polish and English, as well as Swedish on a basic, everyday level.
-        During my time in Hyper Island I've been learning and gaining experience
-        in html, css, javascript, ux and ui design, react, figma, basics of MERN stack, GitHub and
-        agile methods of working in teams.
+        skills in problem solving, organising and logistics. <br /> I speak
+        fluent
+        <b> Polish</b> and <b>English</b>, as well as Swedish on a basic,
+        everyday level. <br /> During my time in Hyper Island I've been learning
+        and gaining experience in <b>HTML</b>, <b>CSS</b>, <b> JavaScript</b>,
+        <b> UX</b> and <b>UI</b> design, <b>ReactJS</b>, <b>Figma</b>, basics of{' '}
+        <b>MERN</b> stack,
+        <b> GitHub</b> and <b>agile</b> methods of working in teams.
       </p>
     </div>
   );
