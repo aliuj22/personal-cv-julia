@@ -19,8 +19,8 @@ const AboutMe = () => {
         <b> Polish</b> and <b>English</b>, as well as Swedish on a basic,
         everyday level. <br /> During my time in Hyper Island I've been learning
         and gaining experience in <b>HTML</b>, <b>CSS</b>, <b> JavaScript</b>,
-        <b> UX</b> and <b>UI</b> design, <b>ReactJS</b>, <b>Figma</b>, basics of{' '}
-        <b>MERN</b> stack,
+        <b> UX</b> and <b>UI</b> design, <b>ReactJS</b>, <b>NextJS</b>,{' '}
+        <b>Figma</b>, basics of <b>MERN</b> stack, <b>TDD</b>
         <b> GitHub</b> and <b>agile</b> methods of working in teams.
       </p>
     </div>

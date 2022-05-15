@@ -11,7 +11,7 @@ const Deployed = (props) => {
           </div>
           <div className="gridRight">
             {item.gif && item.gif}
-            {/* {item.link2 && item.link2} */}
+
             <p>{item.tech}</p>
 
             {item.link2 ? (

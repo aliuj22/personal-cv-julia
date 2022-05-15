@@ -13,7 +13,6 @@ const Nav = () => {
         JULIA WOŚ
       </a>
       <Link to={'/'}>ABOUT ME</Link>
-
       <Link to={'experience'}>PORTFOLIO</Link>
     </nav>
   );
