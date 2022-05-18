@@ -7,7 +7,7 @@ const AboutMe = () => {
       <h2>ABOUT ME</h2>
       <p>
         I'm a 22 year old, based in Stockholm since 2018. Originally I'm from
-        Poland. Currently studying my (not so long ago found) passion, Frontend
+        Poland. Currently studying my recent passion, Frontend
         Development at Hyper Island. I'm curious about the world and it's
         history, love reading books, which I buy more, than can read. Passionate
         about people and making positive changes to the world. I have experience
@@ -20,7 +20,7 @@ const AboutMe = () => {
         everyday level. <br /> During my time in Hyper Island I've been learning
         and gaining experience in <b>HTML</b>, <b>CSS</b>, <b> JavaScript</b>,
         <b> UX</b> and <b>UI</b> design, <b>ReactJS</b>, <b>NextJS</b>,{' '}
-        <b>Figma</b>, basics of <b>MERN</b> stack, <b>TDD</b>, 
+        <b>Figma</b>, basics of <b>MERN</b> stack, <b>RESTful APIs</b>, <b>TDD</b>, 
         <b> GitHub</b> and <b>agile</b> methods of working in teams.
       </p>
     </div>
