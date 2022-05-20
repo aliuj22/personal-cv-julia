@@ -116,7 +116,7 @@ function App() {
     },
 
     {
-      name: 'Klaudia's Portfolio',
+      name: `Klaudia's Portfolio`,
       description: `My first project for Hyper Island, a portfolio page for my friend that is an artist. My biggest challenge during this project was learning JavaScript, since at the start of the course I practically didn't know any, so I've spent a big portion of time on watching online tutorials and get better grasp of it. Implementing responsiveness, achieving good performance with many images and learning flexbox were another big learnings. `,
       tech: (
         <>
@@ -182,13 +182,13 @@ function App() {
           <IoLogoCss3 className="projectIcons" />
         </>
       ),
-      link: 'https://github.com/egiiiiil/dream-team-module-2',
+      link: 'https://egiiiiil.github.io/dinogotchi/',
       gif: (
         <a
           className="gif-container"
           target="_blank"
           rel="noreferrer"
-          href="https://github.com/egiiiiil/dream-team-module-2"
+          href="https://egiiiiil.github.io/dinogotchi/"
         >
           {' '}
           <img
