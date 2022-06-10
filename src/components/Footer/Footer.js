@@ -4,6 +4,9 @@ import './Footer.scss';
 const Footer = () => {
   return (
     <footer>
+      <div>
+        <h2>Are you interested in seeing more of my projects? Contact me! </h2>
+      </div>
       <a
         target="_blank"
         rel="noreferrer noopener"
