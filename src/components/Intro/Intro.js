@@ -14,6 +14,7 @@ const Intro = () => {
         target="_blank"
         rel="noreferrer noopener"
         href="https://www.linkedin.com/in/julia-wos99/"
+        aria-label="linkedin profile"
       >
         <i className="fab fa-linkedin"></i>
       </a>
@@ -21,6 +22,7 @@ const Intro = () => {
         target="_blank"
         rel="noreferrer noopener"
         href="https://github.com/aliuj22"
+        aria-label="github profile"
       >
         <i className="fab fa-github-square"></i>
       </a>
