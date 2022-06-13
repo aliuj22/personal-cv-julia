@@ -63,7 +63,7 @@ h3 {
 
   &__link {
     text-decoration: underline;
-    color: $color-secondary;
+    color: $color-extra;
     font-size: 1.3em;
     border-radius: 6px;
     box-shadow: inset 0 0 0 0 $color-secondary;
@@ -92,4 +92,11 @@ h3 {
 
 .projectImg {
   margin: 20% 0 10% 0;
+}
+
+.modalContainer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
