@@ -1,5 +1,4 @@
 import React from 'react';
-import ModalImg from '../../ModalImg/ModalImg';
 
 const Deployed = (props) => {
   return (
@@ -9,14 +8,6 @@ const Deployed = (props) => {
           <div className="gridLeft">
             <h3>{item.name}</h3>{' '}
             <p className="gridLeft__description">{item.description} </p>{' '}
-            <div className="modalContainer">
-              {item.extra &&
-                item.extra.map((src, i) => (
-                  <div key={i}>
-                    <ModalImg img={src.src} alt={src.alt} />
-                  </div>
-                ))}
-            </div>
           </div>
           <div className="gridRight">
             {item.gif && item.gif}
