@@ -6,10 +6,6 @@ import invadersImg from './img/invaders.png';
 import shopGif from './img/GIF-shop.mp4';
 import shopWebM from './img/GIF-shop.webm';
 import phaser from './img/phaser.png';
-import dbImg from './img/sc-db.png';
-import testImg from './img/sc-test.png';
-import scoreImg from './img/sc-scores.png';
-import firebaseImg from './img/sc-firebase.png';
 
 import { Experience, Nav, Footer } from './components';
 import Home from './pages/home';
@@ -61,10 +57,6 @@ function App() {
           </video>
         </div>
       ),
-      extra: [
-        { src: dbImg, alt: 'MongoDB database of orders' },
-        { src: testImg, alt: 'example of completed backend tests in mocha' },
-      ],
     },
     {
       name: 'Redesign of the B2B side of the website for DocLounge.',
@@ -113,10 +105,6 @@ function App() {
           <p id="desktopOnly">[Desktop Only]</p>
         </>
       ),
-      extra: [
-        { src: scoreImg, alt: 'Leaderboard page' },
-        { src: firebaseImg, alt: 'firbase database of scores' },
-      ],
     },
 
     {
