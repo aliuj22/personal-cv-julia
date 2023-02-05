@@ -6,6 +6,21 @@ import invadersImg from './img/invaders.png';
 import shopGif from './img/GIF-shop.mp4';
 import shopWebM from './img/GIF-shop.webm';
 import phaser from './img/phaser.png';
+/* eslint-disable */
+import {
+  DemoHome,
+  DemoHomeMin,
+  Dashboard,
+  DashboardMin,
+  Savings,
+  SavingsMin,
+  Transaction,
+  TransactionMin,
+  TransactionHistory,
+  TransactionHistoryMin,
+  Verify,
+  VerifyMin,
+} from './img/demo';
 
 import { Experience, Nav, Footer } from './components';
 import Home from './pages/home';
@@ -16,22 +31,77 @@ import {
   IoLogoNodejs,
 } from 'react-icons/io5';
 import {
+  SiReact,
   SiNextdotjs,
   SiExpress,
   SiMongodb,
   SiMocha,
   SiChai,
   SiFigma,
+  SiTypescript,
+  SiRedux,
 } from 'react-icons/si';
+import 'react-image-gallery/styles/scss/image-gallery.scss';
+import ImageGallery from 'react-image-gallery';
 
 function App() {
   console.log(
     '%c Well Hello There!',
     'font-weight: bold; font-size: 50px;color: red; text-shadow: 3px 3px 0 rgb(217,31,38) , 6px 6px 0 rgb(226,91,14) , 9px 9px 0 rgb(245,221,8) , 12px 12px 0 rgb(5,148,68) , 15px 15px 0 rgb(2,135,206) , 18px 18px 0 rgb(4,77,145) , 21px 21px 0 rgb(42,21,113); margin-bottom: 12px; padding: 5%'
   );
+  const images = [
+    {
+      original: DemoHome,
+      thumbnail: DemoHomeMin,
+      originalWidth: 20,
+    },
+    {
+      original: Dashboard,
+      thumbnail: DashboardMin,
+    },
+    {
+      original: Savings,
+      thumbnail: SavingsMin,
+    },
+    {
+      original: Transaction,
+      thumbnail: TransactionMin,
+    },
+    {
+      original: TransactionHistory,
+      thumbnail: TransactionHistoryMin,
+    },
+    {
+      original: Verify,
+      thumbnail: VerifyMin,
+    },
+  ];
 
-  // //gifs: use canva
   const deployedProjects = [
+    {
+      name: 'Demo Corp',
+      description: `Demo website for 12iD. My experience as a Fullstack Development Intern at 12iD has allowed me to develop and implement new features and design on a demo website showcasing the 12iD mobile app. During my time there, I successfully completed a full redesign, implemented new flows and features, and gained a deep understanding of the product. I also worked on fixing bugs and adding new features to an in-production admin portal.`,
+      tech: (
+        <>
+          <SiReact className="projectIcons" />
+          <SiRedux className="projectIcons" />
+          <IoLogoNodejs className="projectIcons" />
+          <SiExpress className="projectIcons" />
+          <SiMongodb className="projectIcons" />
+          <SiTypescript className="projectIcons" />
+        </>
+      ),
+
+      gif: (
+        <div className="gif-container">
+          <ImageGallery
+            additionalClass="gif"
+            showPlayButton={false}
+            items={images}
+          />
+        </div>
+      ),
+    },
     {
       name: 'Skateboard Shop',
       description: `E-commerce platform built in agile teams. Part of Code & Collaborate module at HI, course duration: 5 weeks. The goal was to focus on working as a team following agile methodologies and learn how to successfully collaborate. My team and I had daily check-ins, code reviews, a weekly scrum master (a person in charge of making shure we follow scrum methodologies, a facilitator/coach) and sprint reviews. We mostly worked with pair and mob programming and implemented some TDD and basic encryption for the login function. My biggest learnings include working with MERN stack, NextJS, Mocha and Chai for backend testing, backend folder structure, mobile first design and working in sprints with a scrum master. `,
@@ -50,7 +120,6 @@ function App() {
         'https://github.com/aliuj22/code_collaborate_shop_server/tree/master/src',
       gif: (
         <div className="gif-container">
-          {/* <img src={shopGif} alt="gif of the skateboard shop" className="gif" /> */}
           <video controls muted className="gif">
             <source src={shopGif} type="video/mp4" />
             <source src={shopWebM} type="video/webm" />

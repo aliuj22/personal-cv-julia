@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Deployed = (props) => {
+const WithImages = (props) => {
   return (
     <div id="projects-container" className="card">
       {props.description.map((item, index) => (
@@ -14,7 +14,7 @@ const Deployed = (props) => {
 
             <p>{item.tech}</p>
 
-            {item.link2 && item.link2 ? (
+            {item.link2 ? (
               <>
                 {' '}
                 <a
@@ -38,17 +38,15 @@ const Deployed = (props) => {
                 </a>
               </>
             ) : (
-              item.link && (
-                <a
-                  target="_blank"
-                  href={item.link}
-                  rel="noreferrer"
-                  className="gridRight__link"
-                >
-                  {' '}
-                  <em>Check it out here!</em>{' '}
-                </a>
-              )
+              <a
+                target="_blank"
+                href={item.link}
+                rel="noreferrer"
+                className="gridRight__link"
+              >
+                {' '}
+                <em>Check it out here!</em>{' '}
+              </a>
             )}
           </div>
         </div>
@@ -57,4 +55,4 @@ const Deployed = (props) => {
   );
 };
 
-export default Deployed;
+export default WithImages;

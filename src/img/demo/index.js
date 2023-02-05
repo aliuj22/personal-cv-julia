@@ -1,0 +1,12 @@
+export const DemoHome = require('./demo-corp-home.png');
+export const DemoHomeMin = require('./min-demo-corp-home.png');
+export const Dashboard = require('./demo-corp-dashboard.png');
+export const DashboardMin = require('./min-demo-corp-dashboard.png');
+export const Savings = require('./demo-corp-savings.png');
+export const SavingsMin = require('./min-demo-corp-savings.png');
+export const Transaction = require('./demo-corp-transaction.png');
+export const TransactionMin = require('./min-demo-corp-transaction.png');
+export const TransactionHistory = require('./demo-corp-transaction-history.png');
+export const TransactionHistoryMin = require('./min-demo-corp-transaction-history.png');
+export const Verify = require('./demo-corp-verify.png');
+export const VerifyMin = require('./min-demo-corp-verify.png');
