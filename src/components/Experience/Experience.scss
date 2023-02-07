@@ -30,6 +30,9 @@ h3 {
   @media screen and (max-width: $mq-tablet) {
     grid-template-columns: auto 90% auto;
   }
+  @media screen and (min-width: $mq-very-large-screens) {
+    grid-template-columns: auto 70% auto;
+  }
 }
 
 .cardFlex {
@@ -46,7 +49,9 @@ h3 {
     flex-direction: column;
   }
 }
-
+#demo {
+  padding: 2% 5%;
+}
 .gridLeft {
   padding: 0 5%;
   h3 {
@@ -56,6 +61,10 @@ h3 {
   &__description {
     text-align: left;
   }
+}
+
+#nerds {
+  margin-bottom: 9%;
 }
 
 .gridRight {

@@ -5,7 +5,7 @@ const Deployed = (props) => {
     <div id="projects-container" className="card">
       {props.description.map((item, index) => (
         <div className="cardFlex" key={index}>
-          <div className="gridLeft">
+          <div className="gridLeft" id={item.id ? item.id : ''}>
             <h3>{item.name}</h3>{' '}
             <p className="gridLeft__description">{item.description} </p>{' '}
           </div>

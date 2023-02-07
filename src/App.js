@@ -6,20 +6,16 @@ import invadersImg from './img/invaders.png';
 import shopGif from './img/GIF-shop.mp4';
 import shopWebM from './img/GIF-shop.webm';
 import phaser from './img/phaser.png';
-/* eslint-disable */
 import {
-  DemoHome,
   DemoHomeMin,
-  Dashboard,
   DashboardMin,
-  Savings,
   SavingsMin,
-  Transaction,
   TransactionMin,
-  TransactionHistory,
   TransactionHistoryMin,
-  Verify,
   VerifyMin,
+  OtherServicesMin,
+  CalendarMin,
+  InsuranceMin,
 } from './img/demo';
 
 import { Experience, Nav, Footer } from './components';
@@ -51,36 +47,66 @@ function App() {
   );
   const images = [
     {
-      original: DemoHome,
+      original: DemoHomeMin,
       thumbnail: DemoHomeMin,
-      originalWidth: 20,
     },
     {
-      original: Dashboard,
+      original: DashboardMin,
       thumbnail: DashboardMin,
     },
     {
-      original: Savings,
+      original: SavingsMin,
       thumbnail: SavingsMin,
     },
     {
-      original: Transaction,
-      thumbnail: TransactionMin,
-    },
-    {
-      original: TransactionHistory,
+      original: TransactionHistoryMin,
       thumbnail: TransactionHistoryMin,
     },
     {
-      original: Verify,
+      original: TransactionMin,
+      thumbnail: TransactionMin,
+    },
+    {
+      original: VerifyMin,
       thumbnail: VerifyMin,
+    },
+    {
+      original: OtherServicesMin,
+      thumbnail: OtherServicesMin,
+    },
+    {
+      original: CalendarMin,
+      thumbnail: CalendarMin,
+    },
+    {
+      original: InsuranceMin,
+      thumbnail: InsuranceMin,
     },
   ];
 
   const deployedProjects = [
     {
+      id: 'demo',
       name: 'Demo Corp',
-      description: `Demo website for 12iD. My experience as a Fullstack Development Intern at 12iD has allowed me to develop and implement new features and design on a demo website showcasing the 12iD mobile app. During my time there, I successfully completed a full redesign, implemented new flows and features, and gained a deep understanding of the product. I also worked on fixing bugs and adding new features to an in-production admin portal.`,
+      description: (
+        <span>
+          Demo website for potential 12iD customers. Used to present different
+          uses for the 12iD mobile app. My task was to implement a new design
+          and to create more features. The goal was to not only update the
+          design and make it more user-friendly but also to make the platform
+          more versatile to attract a wide array of customers.
+          <br /> Milestones: Complete redesign of existing features - based on
+          the provided prototype from the designer. New features - activity log,
+          front and backend logic for opening a savings account, updated and
+          more straightforward payment flow, booking services and reporting an
+          insurance claim, idle logout.
+          <br /> Takeaways: Working in a small hybrid team, joining a big
+          codebase, working with agile & kanban in a professional setting,
+          progress reporting, typescript and redux, creating backend logic from
+          scratch, code reviews and proper structure for PR’s, thoroughly
+          documenting my work and finally knowing when to ask for help.
+        </span>
+      ),
       tech: (
         <>
           <SiReact className="projectIcons" />
@@ -98,6 +124,7 @@ function App() {
             additionalClass="gif"
             showPlayButton={false}
             items={images}
+            showThumbnails={true}
           />
         </div>
       ),
@@ -146,6 +173,7 @@ function App() {
       ),
     },
     {
+      id: 'nerds',
       name: 'Nerd Invaders',
       description: `A group project created in Hyper Island during game design oriented module, course duration: 4 weeks. We have been given a task to create a simple game using Phaser3 framework. We were inspired by classical space invaders game. My biggest learnings from this project were getting deeper understanding of working with JavaScript, working as a team and importance of daily check-ins with teammates, game design principles. `,
       tech: (
