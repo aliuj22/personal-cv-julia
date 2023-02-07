@@ -5,7 +5,7 @@ const Deployed = (props) => {
     <div id="projects-container" className="card">
       {props.description.map((item, index) => (
         <div className="cardFlex" key={index}>
-          <div className="gridLeft">
+          <div className="gridLeft" id={item.id ? item.id : ''}>
             <h3>{item.name}</h3>{' '}
             <p className="gridLeft__description">{item.description} </p>{' '}
           </div>
@@ -14,7 +14,7 @@ const Deployed = (props) => {
 
             <p>{item.tech}</p>
 
-            {item.link2 ? (
+            {item.link2 && item.link2 ? (
               <>
                 {' '}
                 <a
@@ -38,15 +38,17 @@ const Deployed = (props) => {
                 </a>
               </>
             ) : (
-              <a
-                target="_blank"
-                href={item.link}
-                rel="noreferrer"
-                className="gridRight__link"
-              >
-                {' '}
-                <em>Check it out here!</em>{' '}
-              </a>
+              item.link && (
+                <a
+                  target="_blank"
+                  href={item.link}
+                  rel="noreferrer"
+                  className="gridRight__link"
+                >
+                  {' '}
+                  <em>Check it out here!</em>{' '}
+                </a>
+              )
             )}
           </div>
         </div>

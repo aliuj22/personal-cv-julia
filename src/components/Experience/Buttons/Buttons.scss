@@ -1,5 +1,5 @@
 @import 'src/components/Variables.scss';
-button {
+button.button {
   padding: 1%;
   font-size: 1rem;
   margin: 2%;
@@ -8,17 +8,17 @@ button {
   box-shadow: 2px 3px #999;
 }
 
-button:hover {
+button.button:hover {
   border-color: $color-secondary;
   color: $color-secondary;
 }
 
-button:active {
+button.button:active {
   transform: translateY(4px);
   color: $color-secondary;
 }
 
-button:focus {
+button.button:focus {
   color: $color-secondary;
   border-color: $color-secondary;
 }
