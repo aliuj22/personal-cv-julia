@@ -14,7 +14,7 @@ h3 {
   width: 30vw;
   margin: 5% 5% 0 5%;
 
-  @media screen and (max-width: $mq-phone) {
+  @media screen and (max-width: $mq-computer) {
     width: 50vw;
   }
 }
@@ -45,9 +45,12 @@ h3 {
   padding: 3%;
   box-shadow: 10px 5px 15px $color-secondary;
 
-  @media screen and (max-width: $mq-tablet) {
+  @media screen and (max-width: $mq-computer) {
     flex-direction: column;
   }
+}
+.cardFlex:first-of-type {
+  margin-top: 2%;
 }
 #demo {
   padding: 2% 5%;

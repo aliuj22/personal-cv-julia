@@ -4,7 +4,7 @@ import './Experience.scss';
 const Experience = (props) => {
   return (
     <div id="experience">
-      <h2>PROJECTS</h2>
+      <h2 className='mb-0'>PROJECTS</h2>
 
       <div>
         <Deployed description={props.deployedProjects} />

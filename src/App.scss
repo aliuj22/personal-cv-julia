@@ -12,3 +12,18 @@ body {
     font-size: 0.9rem;
   }
 }
+.mb-0 {
+  margin-bottom: 0;
+}
+@media screen and (min-width: $mq-tablet) {
+  .image-gallery-left-nav .image-gallery-svg,
+  .image-gallery-right-nav .image-gallery-svg {
+    display: block !important;
+    height: 100% !important ;
+    width: 100% !important;
+  }
+  button.image-gallery-left-nav,
+  button.image-gallery-right-nav {
+    width: 10% !important;
+  }
+}
