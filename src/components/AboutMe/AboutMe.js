@@ -5,7 +5,7 @@ const AboutMe = () => {
   return (
     <div id="about">
       <p id="aboutText">
-        I am a motivated Fullstack Developer soon-to-be graduate from Hyper
+        I am a soon-to-be graduate from Hyper
         Island, eager to apply my skills and gain professional experience as a
         developer. <br />
         My experience as a Fullstack Development Intern at 12iD has allowed me

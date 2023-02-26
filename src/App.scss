@@ -27,3 +27,9 @@ body {
     width: 10% !important;
   }
 }
+.image-gallery  {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
