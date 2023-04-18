@@ -90,8 +90,7 @@ function App() {
       name: 'Demo Corp website redesign for 12iD',
       description: (
         <span>
-          This is the project I worked on mostly during my internship at 12iD. 
-          A demo website for potential 12iD customers. Used to present different
+          This is a project I mostly worked on during my internship at 12iD - a demo website for potential 12iD customers. Used to present different
           uses for the 12iD mobile app. My task was to implement a new design
           and to create more features. The goal was to not only update the
           design and make it more user-friendly but also to make the platform
