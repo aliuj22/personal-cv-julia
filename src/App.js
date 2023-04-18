@@ -87,10 +87,11 @@ function App() {
   const deployedProjects = [
     {
       id: 'demo',
-      name: 'Demo Corp',
+      name: 'Demo Corp website redesign for 12iD',
       description: (
         <span>
-          Demo website for potential 12iD customers. Used to present different
+          This is the project I worked on mostly during my internship at 12iD. 
+          A demo website for potential 12iD customers. Used to present different
           uses for the 12iD mobile app. My task was to implement a new design
           and to create more features. The goal was to not only update the
           design and make it more user-friendly but also to make the platform
